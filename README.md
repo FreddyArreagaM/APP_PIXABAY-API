@@ -1,27 +1,12 @@
-# APPAPIPIXABAY
+# APP_API-PIXABAY
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+LinkAppWeb: https://app-pixabayapi.netlify.app/
 
-## Development server
+AppWeb buscador de imagenes consumiendo datos de la API de Pixabay 
+https://pixabay.com/es/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![image](https://github.com/FreddyArreagaM/APP_PIXABAY-API/assets/127709400/8c9dbfb5-b9ca-46cf-a3d8-4fc1f49dad5e)
 
-## Code scaffolding
+![image](https://github.com/FreddyArreagaM/APP_PIXABAY-API/assets/127709400/1c66aa17-5e55-4308-86ca-2453545c9b58)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
