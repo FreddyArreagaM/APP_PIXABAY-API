@@ -1,0 +1,19 @@
+.likesViews{
+    font-weight: bold;
+    margin-bottom: -3px;
+}
+.badge{
+    margin-top: -4px;
+}
+
+.img{
+    height: 160px;
+}
+
+.card{
+    height: 330px;
+}
+
+a{
+    cursor: pointer;
+}
