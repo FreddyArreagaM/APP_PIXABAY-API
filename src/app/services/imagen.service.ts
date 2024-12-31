@@ -12,7 +12,7 @@ export class ImagenService {
   //Declaración de variable que recibe el término de busqueda.
   private $terminoBusqueda = new Subject <string>();
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
 
   }
 
@@ -26,7 +26,7 @@ export class ImagenService {
     return this.$error.asObservable();
   }
 
-  //Metodo para asignar en el observable el termino de busqueda obtenido del input 
+  //Metodo para asignar en el observable el termino de busqueda obtenido del input
   setTerminoBusqueda(termino: string){
     this.$terminoBusqueda.next(termino);
   }
@@ -38,7 +38,6 @@ export class ImagenService {
 
   //(Obtener las datos de la API)
   getImagenes(termino: string, imagenesporPagina : number, paginaActual: number): Observable<any>{
-    console.log('pagina actual'+paginaActual);
     const KEY = '36489745-7e300252b838e5ac1e70ad825'
     const URL = 'https://pixabay.com/api/?key='+KEY+'&q='+termino+'&per_page='+imagenesporPagina+'&page='+paginaActual;
 

@@ -30,16 +30,13 @@ export class ListarImagenComponent {
 
   obtenerImagenes(){
     this._imagenService.getImagenes(this.termino, this.imagenesporPagina, this.paginaActual).subscribe(data =>{
-      console.log(data);
       this.loading = false;
       if(data.hits.length === 0){
-        this._imagenService.setError("Opss.. no encontramos ningun resultado");    
+        this._imagenService.setError("Opss.. no encontramos ningun resultado");
       }else{
         this.listImagenes = data.hits;
       }
       this.calculoTotalPagina = Math.ceil(data.totalHits / this.imagenesporPagina);
-      console.log(this.calculoTotalPagina);
-
     }, error =>{
       this._imagenService.setError("Opss.. ocurrió un error");
       this.loading = false;
@@ -57,7 +54,7 @@ export class ListarImagenComponent {
     if(this.paginaActual < this.calculoTotalPagina){
       this.paginaActual++;
       this.obtenerImagenes();
-    }  
+    }
   }
 
   reset(){
